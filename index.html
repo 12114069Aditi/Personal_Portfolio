@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/045a4002db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo" height="70">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Aditi</span> Verma</h1>
+        </div>
+    </div>
+</div>
+<!-- --------about---- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Aditi Verma, a self-motivated student deeply passionate about technology. With a strong focus on frontend development using the React.js
+                     framework, I specialize in creating dynamic and responsive user interfaces. My proficiency extends to data structures, algorithms, 
+                     and problem-solving, skills I've refined through rigorous study and practical applications. During my internship as an IoT developer,
+                      I gained valuable expertise in IoT technologies, enhancing my skills in Embedded System, Sensor Integration and Communication Protocols.
+                      I thrive on challenges and am dedicated to leveraging my skills to drive innovation and make meaningful contributions to the technology industry.</p>
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C, C++, JavaScript, Matlab</li>
+                            <li><span>Technologies</span><br>Github, Embedded System, Communication Protocols, Sensor Integration</li>
+                            <li><span>Developer Tools</span><br>CSS, Material UI, ReactJS</li>
+                            <li><span>Relevant Coursework</span><br>DSA, OOP, OS, DBMS, Microprocessor and Microcontroller</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>IoT Developer Internship<br>RRSC-North,NRSC-ISRO, New Delhi</span><br>May 24,2024-July 24, 2024</li>
+                            <li><span>Description</span><br>As an IoT Developer Intern at RRSC-NORTH, NRSC-ISRO, my primary responsibilities include working on a project to develop an Air Quality Index (AQI) calculator. This involves integrating sensors to detect pollutant concentrations, 
+                                utilizing embedded systems for data processing, and implementing communication protocols to transmit data to the cloud platform ThingSpeak.</li>
+                            <li>Incorporated various sensors to detect pollutant concentrations in the air.</li>
+                            <li>Programmed the UNO R3 microcontroller along with the ESP8266 module (using CH340G Arduino) to process sensor data in real-time.</li>
+                            <li>Implemented HTTP protocols for transmitting data from the UNO R3 + ESP8266 setup to ThingSpeak, a cloud platform.</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>National Institute of Technology Kurukshetra, Haryana  Dec,2021-Present</span><br>Bachelor of Technology in Electrical,  CGPA: 8.3798 </li>
+                            <li><span>Emmanuel Mission School, Kota, Rajasthan  2021</span><br>Class XII,  CBSE: 85.28%</li>
+                            <li><span>St. Lawrence School, Lalitpur, Uttar Pradesh  2019</span><br>Class X,  ICSE: 92.38%</li>
+                            </ul>
+                      </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------services------ -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developer</h2>
+                <!--<p>lorem ipsum</p>
+                <a href="#">Learn more</a>-->
+            </div>
+            <div>
+                <i class="fa-solid fa-wifi"></i>
+                <h2>IoT Developer</h2>
+                <!--<p>lorem ipsum</p>
+                <a href="#">Learn more</a>-->
+            </div>
+            <!--<div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2></h2>
+                <p>lorem ipsum</p>
+                <a href="#">Learn more</a>
+            </div>-->
+        </div>
+    </div>
+ </div>
+ <!-- -------portfolio--------- -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png" height="175">
+                <div class="layer">
+                    <h3>Career Forge Website</h3>
+                    <p>Career Forge is a comprehensive online platform designed to empower students in their journey towards successful career. The website is thoughtfully curated, offering a range of features and sections: Resume Builder, Carrer Guide, Placement Statistics of the college, Interview probes.</p>
+                    <a href="https://career-forge-project.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>AQI Calculator- IoT development project </h3>
+                    <p>The AQI Calculator IoT device measures air quality by sensing pollutant concentrations (PM2.5, CO, NO2, etc.) in real-time. It calculates the Air Quality Index (AQI) using international standards and transmits data via WiFi to platforms like ThingSpeak for remote access.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h3>Hostel Management System</h3>
+                    <p>Developed a software system to manage a hostel operations efficiently, including student records, room allocation using MySQL and OOP.</p>
+                    <a href="https://github.com/12114069Aditi/Hostel-Accommodation-System-In-C-Using-MySQL-OOP-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work4.png">
+                <div class="layer">
+                    <h3>Resume Builder</h3>
+                    <p>Resume Builder is a user-friendly tool that assissts students in crafting impressive resumes. It provides customizable templates and hlpful tips to ensure each resume showcases the individual skills and achievements effectively.</p>
+                    <a href="https://resume-builder-section1.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--<a href="#" class="btn">See more</a>-->
+    </div>
+  </div>
+  <!-- -----------Contact-------- -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> adtverma123@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> 8307119883, 9057827554</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/aditi-verma-512052229/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/12114069Aditi"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/ADITIVERMA.RESUME.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Aditi. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+   </div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxIR9umYVpm92r5Nos_ghxe0Cl3dHtLn2wBWvMnuYtjgbIBeFfba65Pelc7PLSzDS91nQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
